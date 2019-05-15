@@ -1,0 +1,145 @@
+<div class="col-sm">
+    <div class="card">
+        <div class="card-header">
+            <strong>Tạo sản phẩm mới</strong>
+        </div>
+        <form action="" method="post" class="form-horizontal">
+            <div class="card-body card-block">
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="brand" class=" form-control-label">Thương hiệu</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select name="brand" id="brand" class="form-control-lg form-control">
+                            <option value="0">Tên thương hiệu</option>
+                            <option value="apple">Apple</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="oppo">Oppo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="name" class=" form-control-label">Tên sản phẩm</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="text" id="name" name="name" placeholder="Tên"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Nhập tên sản phẩm</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="count" class=" form-control-label">Số lượng</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="count" name="count" placeholder="Số lượng"
+                                                        class="form-control">
+                        <small class="help-block form-text">Đơn vị: cái</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="price" class=" form-control-label">Giá sản phẩm</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="price" name="price" placeholder="Giá"
+                                                        class="form-control">
+                        <small class="form-text text-muted">Đơn giá: VNĐ</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="os" class=" form-control-label">Hệ điều hành</label></div>
+                    <div class="col-12 col-md-9">
+                        <select name="os" id="os" class="form-control">
+                            <option value="0">Chọn hệ điều hành</option>
+                            <option value="android">Android</option>
+                            <option value="ios">iOS</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="ram" class=" form-control-label">Dung lượng RAM</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select name="ram" id="ram" class="form-control-sm form-control">
+                            <option value="0">Chọn dung lượng RAM</option>
+                            <option value="16-gb">16 GB</option>
+                            <option value="8-gb">8 GB</option>
+                            <option value="6-gb">6 GB</option>
+                            <option value="4-gb">4 GB</option>
+                            <option value="3-gb">3 GB</option>
+                            <option value="2-gb">2 GB</option>
+                            <option value="1-gb">1 GB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="storage" class=" form-control-label">Bộ nhớ trong</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select name="storage" id="storage" class="form-control-sm form-control">
+                            <option value="0">Chọn bộ nhớ trong</option>
+                            <option value="1-tb">1 TB</option>
+                            <option value="512-gb">512 GB</option>
+                            <option value="256-gb">256 GB</option>
+                            <option value="128-gb">128 GB</option>
+                            <option value="64-gb">64 GB</option>
+                            <option value="32-gb">32 GB</option>
+                            <option value="16-gb">16 GB</option>
+                            <option value="8-gb">8 GB</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label class=" form-control-label">Số sim</label></div>
+                    <div class="col col-md-9">
+                        <div class="form-check">
+                            <div class="radio">
+                                <label for="1-sim" class="form-check-label ">
+                                    <input type="radio" id="1-sim" name="radios" value="1-sim"
+                                           class="form-check-input">1 sim
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="2-sim" class="form-check-label ">
+                                    <input type="radio" id="2-sim" name="radios" value="2-sim"
+                                           class="form-check-input">2 sim
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="pin" class=" form-control-label">Dung lượng pin</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="pin" name="pin" placeholder="Dung lượng pin"
+                                                        class="form-control">
+                        <small class="help-block form-text">Đơn vị: mAh</small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="display" class=" form-control-label">Kích thước màn
+                        hình</label>
+                    </div>
+                    <div class="col-12 col-md-4"><input type="text" id="display" name="display"
+                                                        placeholder="Kích thước màn hình" class="form-control">
+                        <small
+                                class="help-block form-text">Đơn vị: inches
+                        </small>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="file-multiple-input" class=" form-control-label">Hình ảnh sản
+                        phẩm</label></div>
+                    <div class="col-12 col-md-9"><input type="file" accept="image/*" id=" file-multiple-input"
+                                                        name="file-multiple-input" multiple=""
+                                                        class="form-control-file"></div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-sm">
+                    <i class="fa fa-plus"></i> Thêm
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-sync-alt"></i> Nhập lại
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

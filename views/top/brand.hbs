@@ -1,0 +1,29 @@
+<div class="col-sm">
+    <div class="card">
+        <div class="card-header">
+            <strong class="card-title">Top 10 thương hiệu bán chạy</strong>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Thương hiệu</th>
+                        <th scope="col">Tổng số lượng</th>
+                        <th scope="col">Tổng doanh thu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data}}
+                    <tr>
+                        <th scope="row">{{this.id}}</th>
+                        <td>{{this.brand}}</td>
+                        <td>{{this.count}}</td>
+                        <td>{{this.revenue}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

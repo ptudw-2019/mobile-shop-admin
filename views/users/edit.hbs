@@ -1,0 +1,42 @@
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-header">
+            <strong>Chỉnh sửa</strong>
+        </div>
+        {{#if data}}
+        <div class="card-body card-block">
+            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                <div class="row form-group">
+                    <div class="col col-md-3"><label class=" form-control-label">Tên tài khoản</label></div>
+                    <div class="col-12 col-md-9">
+                        <p class="form-control-static">{{data.username}}</p>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="email-input" class=" form-control-label">Email Input</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="email" value={{data.email}} id="email-input"
+                            name="email-input" placeholder="Email" class="form-control"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="password-input" class=" form-control-label">Mật khẩu</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="password" id="password-input" name="password-input"
+                            placeholder="Mật khẩu" class="form-control"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3"><label for="email-input" class=" form-control-label">Số điện thoại</label>
+                    </div>
+                    <div class="col-12 col-md-9"><input type="text" value={{data.phone}} id="phone"
+                            name="phone" placeholder="Số điện thoại" class="form-control"></div>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa fa-sync-alt"></i> Cập nhật
+            </button>
+        </div>
+        {{/if}}
+    </div>
+</div>

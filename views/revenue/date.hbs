@@ -1,0 +1,52 @@
+<div class="col-sm-4">
+    <div class="card">
+        <div class="card-header">
+            <strong>Thống kê trong ngày</strong>
+        </div>
+        <div class="card-body card-block">
+            <div class="form-group">
+                <label class="form-control-label">Chọn ngày</label>
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                    <input class="form-control" type="date">
+                    <button class="btn btn-primary">Chọn</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã sản phẩm</th>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each data}}
+                    <tr>
+                        <th scope="row">{{this.id}}</th>
+                        <td>{{this.name}}</td>
+                        <td>{{this.count}}</td>
+                        <td>{{this.price}}</td>
+                        <td>{{this.total}}</td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <p class="form-control-static">Không có dữ liệu</p>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        <div class="card-header">
+            <strong>Tổng cộng: {{totalSum}} đồng</strong>
+        </div>
+    </div>
+</div>
